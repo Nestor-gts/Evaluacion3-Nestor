@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Notas</title>
+</head>
+<body>
+
+<h1>Formulario de Notas</h1>
+
+<form method="POST">
+
+    <p>Nota 1:</p>
+    <input type="number" name="nota1" min="10" max="70" required>
+
+    <p>Nota 2:</p>
+    <input type="number" name="nota2" min="10" max="70" required>
+
+    <p>Nota 3:</p>
+    <input type="number" name="nota3" min="10" max="70" required>
+
+    <p>Asistencia (%):</p>
+    <input type="number" name="asistencia" min="0" max="100" required>
+
+    <br><br>
+
+    <input type="submit" value="Enviar">
+
+</form>
+
+{% if promedio %}
+
+<p>Promedio: {{ promedio }}</p>
+
+<p>{{ estado }}</p>
+
+{% endif %}
+
+</body>
+</html>

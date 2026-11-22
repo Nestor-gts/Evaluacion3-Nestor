@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 2</title>
+</head>
+<body>
+
+<form method="POST">
+
+    <p>Nombre 1:</p>
+    <input type="text" name="nombre1" required>
+
+    <p>Nombre 2:</p>
+    <input type="text" name="nombre2" required>
+
+    <p>Nombre 3:</p>
+    <input type="text" name="nombre3" required>
+
+    <br><br>
+
+    <input type="submit" value="Enviar">
+
+</form>
+
+{% if mensaje %}
+<p>{{ mensaje }}</p>
+{% endif %}
+
+</body>
+</html>
+
